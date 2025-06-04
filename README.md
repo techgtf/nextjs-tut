@@ -49,12 +49,27 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ![alt text](image-1.png)
 
 # nested dynamic route route
-// refrence check reouting-demo/src/app/products
+// refrence check routing-demo/src/app/products
 ![alt text](image.png)
 
 # catch all segments 
-// refrence check reouting-demo/src/app/docs
+// refrence check routing-demo/src/app/docs
 ![alt text](image-2.png)
 ![alt text](image-3.png)
 
+<!-- privare folder  -->
+![alt text](image-4.png)
 
+![alt text](image-5.png)
+
+
+<!-- routes group -->
+![alt text](image-6.png) // look at auth folder this is a grouped route. 
+// Now our url is [http://localhost:3000/register, instead of http://localhost:3000/auth/register]
+
+<!-- Layout -->
+![alt text](image-7.png)
+
+// // // // =============== // // // // // 
+<!-- nested layout look in products folder "routing-demo/src/app/products/[productId]" -->
+![alt text](image-8.png)
