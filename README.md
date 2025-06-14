@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+# youtube playlist https://www.youtube.com/watch?v=OldUurB0Wx8&list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY&index=18
+
 First, run the development server:
 
 ```bash
