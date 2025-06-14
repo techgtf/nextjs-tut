@@ -2,8 +2,6 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-# youtube playlist https://www.youtube.com/watch?v=OldUurB0Wx8&list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY&index=18
-
 First, run the development server:
 
 ```bash
@@ -45,6 +43,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
  For usign hooks we need to use 'use client' on top of component
  -->
 
+<!--
+ youtube playlist => https://www.youtube.com/watch?v=OldUurB0Wx8&list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY&index=18
+-->
 
 # dynamic routes  
 // refrence check reouting-demo/src/app/blog
