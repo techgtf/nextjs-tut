@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --background: #2a3940;
+  --foregroun: #ffffff;
+  --primary: #2a3940;
+  --secondary: #39454f;
+  --secondary1: #3d4a54;
+}
+
+.main {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Poppins', 'Poppins Fallback';
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.card {
+  padding: 14px 25px;
+  background: var(--secondary);
+  border-radius: 20px;
+}
