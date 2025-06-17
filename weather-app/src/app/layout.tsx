@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/common/header";
+import { WeatherProvider } from "./context/WeatherContext";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -21,14 +22,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body
         className={`${poppins.variable} antialiased`}
       >
         <main className="main">
-          <Header />
-          {children}
+          <WeatherProvider>
+            <Header />
+            {children}
+          </WeatherProvider>
         </main>
       </body>
     </html>

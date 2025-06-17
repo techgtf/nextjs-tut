@@ -1,9 +1,24 @@
-import React from 'react'
+'use client'
+
+import { useWeather } from '@/app/context/WeatherContext';
+import React, { useEffect, useState } from 'react'
 import { IoIosSearch } from "react-icons/io";
 import { MdOutlineKeyboardVoice } from "react-icons/md";
 
 
 export default function SearchField() {
+    const { setCity } = useWeather()
+    const [inputValue, setInputValue] = useState('')
+
+    useEffect(() => {
+        const debounce = setTimeout(() => {
+            if (inputValue.trim() !== "") {
+                setCity(inputValue.trim())
+            }
+        }, 500);
+        return () => clearTimeout(debounce)
+    }, [inputValue])
+
     return (
         <div className='flex items-center justify-between px-4 py-3 rounded-2xl bg-[#39454f]'>
             <div className='flex gap-3 w-4/5'>
@@ -11,7 +26,9 @@ export default function SearchField() {
                 <input
                     type="text"
                     className='text-[18px] text-gray-400 outline-0 w-full'
-                    placeholder='Search for city or zip code' />
+                    placeholder='Search for city or zip code'
+                    onChange={(e) => setInputValue(e.target.value)}
+                />
             </div>
             <button className='text-gray-400 text-2xl'><MdOutlineKeyboardVoice /></button>
         </div>
